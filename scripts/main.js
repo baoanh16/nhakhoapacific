@@ -83,15 +83,15 @@ $(document).ready(function () {
 	// });
 
 
-	// $(".pacific-warranty-2 .card-result").iziModal()
-	// $(document).on('click', '.pacific-warranty-2 .btn-check', function (event) {
-	// 	event.preventDefault();
-	// 	$('.card-result').iziModal('open');
-	// });
-	// $(document).on('click', '.card-result .card-close', function (event) {
-	// 	event.preventDefault();
-	// 	$('.card-result').iziModal('close');
-	// });
+	$(".pacific-warranty-2 .card-result").iziModal()
+	$(document).on('click', '.pacific-warranty-2 .btn-check', function (event) {
+		event.preventDefault();
+		$('.card-result').iziModal('open');
+	});
+	$(document).on('click', '.card-result .card-close', function (event) {
+		event.preventDefault();
+		$('.card-result').iziModal('close');
+	});
 
 
 	if ($(window).width() < 768) {

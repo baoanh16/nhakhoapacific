@@ -308,9 +308,9 @@
 			</a>
 			<a class="btn btn-next" href="javascript:void(0)">
 				<xsl:attribute name="onclick">
-					<xsl:text>AjaxCheckout.saveorder(false, '</xsl:text>
+					<xsl:text>AjaxCheckout.saveorder(true, '</xsl:text>
 					<xsl:value-of select="/CheckoutAddress/NextPageUrl"></xsl:value-of>
-					<xsl:text>');return false;</xsl:text>
+					<xsl:text>');return true;</xsl:text>
 				</xsl:attribute>
 				<span>
 					<xsl:value-of select="/CheckoutAddress/ContinueShoppingText"></xsl:value-of>

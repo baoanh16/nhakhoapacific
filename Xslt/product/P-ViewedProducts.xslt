@@ -38,9 +38,10 @@
 					</xsl:attribute>
 					</img>
 				</div>
-				<h3 class="title">
+				<h3 class="title price">
 					<xsl:value-of select="Title"></xsl:value-of>
-				</h3><span class="price">
+				</h3>
+				<!-- <span class="price">
 					<xsl:choose>
 						<xsl:when test="Price != '0'">
 							<xsl:value-of select="Price"></xsl:value-of>
@@ -50,12 +51,12 @@
 						</xsl:otherwise>
 					</xsl:choose>
 
-				</span>
+				</span> -->
 				<a class="btn-addcart" href="javascript:void(0)" onclick="AjaxCart.addproducttocart_catalog(this);return false;">
 					<xsl:attribute name="data-productid">
 						<xsl:value-of select="ProductId"></xsl:value-of>
 					</xsl:attribute>
-					<span class="shopping-cart"></span>Mua ngay
+					<span class="shopping-cart"></span>Liên hệ
 				</a>
 			</div>
 		</div>
