@@ -1,0 +1,26 @@
+{
+  "name": "gulp-basic",
+  "description": "basic tool for Front-end dev",
+  "main": "gulpfile.babel.js",
+  "authors": [
+    "sonvh2510"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "swiper": "^4.4.6",
+    "font-awesome": "fontawesome#^5.6.3",
+    "izimodal": "^1.5.1",
+    "tabby": "https://github.com/cferdinandi/tabby.git#^11.2.0",
+    "fancybox": "^3.5.6"
+  }
+}

@@ -1,0 +1,102 @@
+.pacific-course-1
+	padding: r(60px) 0
+	h2
+		font-size: r(40px)
+		color: #2b3ba2
+		text-align: center
+		margin-bottom: r(50px)
+	figure
+		height: 100%
+		.news-img
+			display: block
+			img
+				height: 100%
+				width: 100%
+				object-fit: cover
+		figcaption 
+			border: 1px solid #e1e1e1
+			padding: r(30px)
+			h3
+				a
+					font-size: r(18px)
+					margin-bottom: r(23px)
+					color: #2b3ba2
+					font-weight: 600
+					+line(2)
+			p,.briefcontent
+				*
+					font-size: r(15px)
+					color: #333333
+					margin-bottom: 0.6rem
+					+line(2)
+			.btn-view
+				width: r(140px)
+				height: r(30px)
+				display: flex
+				justify-content: center
+				align-items: center
+				color: white
+				border-radius: 5px
+				background: #2d3a8d
+				font-size: r(14px)
+		@media (max-width: 1200px)
+			figcaption
+				padding: r(15px)
+	.hot-news
+		height: r(577px)
+		.news-img
+			height: 65%
+		figcaption 
+			height: 35%
+		@media (max-width: 1200px)
+			height: r(480px)
+		@media (max-width: 576px)
+			height: auto
+	.part-news
+		height: r(577px)
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		figure
+			flex: 0 0 calc(50% - 10px)
+			max-height: calc(50% - 10px)
+			display: flex
+			background: #fff
+			.news-img
+				max-width: 52%
+				flex: 0 0 52%
+			figcaption
+				max-width: 48%
+				flex: 0 0 48%
+			&:last-child
+				flex-direction: row-reverse
+		@media (max-width: 1200px)
+			height: r(480px)
+			.news-img
+				width: auto !important
+		@media (max-width: 992px)
+			height: auto
+			figure
+				margin-top: r(30px)
+				flex: 0 0 calc(50% - 15px)
+				max-height: calc(50% - 15px)
+			.news-img,figcaption
+				flex: auto !important
+				max-width: 100% !important
+		@media (max-width: 768px)
+			figure
+				flex-direction: column
+				&:last-child
+					flex-direction: column
+	.other-news
+		figure
+			margin-top: r(30px)
+	.pacific-news-detail
+		h2
+			text-align: left
+			margin-bottom: 0
+		figure
+			margin-top: 0
+		figcaption
+			border: 0
+			padding: 0 10px

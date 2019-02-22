@@ -1,0 +1,104 @@
+section.pacific-product-1
+	article.product-detail-1
+		.container
+			.row
+				.col-lg-6
+					.big-thumbnail.swiper-container
+						.swiper-wrapper
+							.swiper-slide
+								.thumbnail-box
+									img(src="./img/product/ct-1.jpg", alt="")
+							.swiper-slide
+								.thumbnail-box
+									img(src="./img/product/ct-2.jpg", alt="")
+							.swiper-slide
+								.thumbnail-box
+									img(src="./img/product/ct-3.jpg", alt="")
+							.swiper-slide
+								.thumbnail-box
+									img(src="./img/product/ct-4.jpg", alt="")
+					.small-thumbnail.swiper-container
+						.swiper-wrapper
+							.swiper-slide
+								.thumbnail-box
+									img(src="./img/product/ct-1.jpg", alt="")
+							.swiper-slide
+								.thumbnail-box
+									img(src="./img/product/ct-2.jpg", alt="")
+							.swiper-slide
+								.thumbnail-box
+									img(src="./img/product/ct-3.jpg", alt="")
+							.swiper-slide
+								.thumbnail-box
+									img(src="./img/product/ct-4.jpg", alt="")
+				.col-lg-6
+					h2 Kềm Premium-Line Dụng cụ chỉnh nha cao cấp
+					.briefcontent
+						p
+							b Thương hiệu: 
+								span 3M
+						p
+							b Nhà cung cấp: 
+								span Nha khoa Thái Bình Dương Pacific
+						p
+							b Mã: 
+								span V510-1006
+						p
+							b Mô tả: 
+								span Là loại kìm rất đặc biệt và vô cùng hữu ích cho Bác sỹ chỉnh nha sử dụng để bấm móc (hook) tại chỗ trên dây cung. Sản phẩm luôn được các bác sỹ chỉnh nha chuyên nghiệp khuyên dùng.
+					.addcart-wrapper
+						.quantity
+							label(for="") Số lượng:
+							input(type="text" name="" value="0" class="product-quantity")
+							.quantity-control
+								span.lnr-chevron-down
+								span.lnr-chevron-up
+						.btn-wrapper
+							a(href="!#").btn-buy
+								span.shopping-cart
+								span Mua giỏ hàng
+								span.lnr-arrow-right
+					.social-sharing
+						.fb-like(data-href='https://developers.facebook.com/docs/plugins/', data-layout='button_count', data-action='like', data-size='small', data-show-faces='true', data-share='true')
+			.row
+				.col-12.attributes-list
+					.attributes-tabs
+						ul(data-tabs).tabs
+							li
+								a(href="#tab-1" data-tab) Mô tả
+							li
+								a(href="#tab-2" data-tab) Hướng dẫn sử dụng
+							li
+								a(href="#tab-3" data-tab) Brochure
+							li
+								a(href="#tab-4" data-tab) Video
+					.attributes-content
+						.content-list(data-tabs-content)
+							.tabs-pane(data-tabs-pane).active#tab-1
+								p Trong chỉnh nha, kềm được xem như cánh tay mặt của người Bác sĩ, mỗi loại kềm có công dụng khác nhau. Tuỳ vào mục đích của Bác sĩ mà sử dụng các loại kềm có chức năng khác nhau. Trong các loại kềm dùng trong chỉnh nha không thể không nhắc đến kềm cắt dây cung, kềm cắt dây được xem là kềm căn bản trong chỉnh nha. Trong chỉnh nha, kềm được xem như cánh tay mặt của người Bác sĩ, mỗi loại kềm có công dụng khác nhau. Tuỳ vào mục đích của Bác sĩ mà sử dụng các loại kềm có chức năng khác nhau. Trong các loại kềm dùng trong chỉnh nha không thể không nhắc đến kềm cắt dây cung, kềm cắt dây được xem là kềm căn bản trong chỉnh nha. 
+							.tabs-pane(data-tabs-pane)#tab-2
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, soluta pariatur magnam id odit quidem cumque suscipit nam voluptates veritatis inventore neque illum provident dicta corrupti necessitatibus explicabo eum iusto.
+							.tabs-pane(data-tabs-pane)#tab-3
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias commodi nulla, nobis nemo voluptate reprehenderit. Ea, expedita dolorum minima, dolorem repellendus dolor incidunt consequatur velit cumque adipisci alias nulla rerum.
+							.tabs-pane(data-tabs-pane)#tab-4
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime tempora id placeat dolores esse! Nisi odio, vero qui temporibus eveniet optio quam reprehenderit quisquam, quia ipsum similique quo sed!
+			.row.related-product
+				.col-12
+					h3 Sản phẩm liên quan
+					.product-slider
+						.swiper-container
+							.swiper-wrapper
+								-for(i=0;i<12;i++)
+									.swiper-slide
+										.product-item
+											.product-img
+												img(src="./img/product/2.jpg", alt="")
+											h3.title Carestream 8100 - Công nghệ chụp sọ mặt tiên tiến
+											span.price 1.505.000đ
+											a(href="!#").btn-addcart
+												span.shopping-cart
+												| Mua ngay
+					.swiper-prev
+						span.lnr-chevron-left
+					.swiper-next
+						span.lnr-chevron-right

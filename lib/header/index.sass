@@ -1,0 +1,269 @@
+.pacific-header-1
+	padding: r(19px) 0
+	background: #231f20
+	position: sticky
+	top: 0
+	left: 0
+	z-index: 9999
+	transition: all 0.3s ease-in-out
+	&.hide
+		transform: translateY(-100%)
+		transition: all 0.3s ease-in-out
+	@media (max-width: 992px)
+		padding: 0.5rem 0 0.8rem
+	.header-wrapper
+		display: flex
+		justify-content: space-between
+		@media (max-width: 992px)
+			margin-top: 0.75rem
+			align-items: center
+	.logo-wrapper
+		@media (max-width: 1200px)
+			img
+				max-height: 3rem
+	.main-nav
+	.top-nav
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		@media (max-width: 992px)
+			justify-content: space-between
+	.searchbox
+		width: r(280px)
+		height: r(30px)
+		position: relative
+		.searchinput
+			background: rgba(255,255,255,0.05)
+			border: 0
+			width: 100%
+			height: 100%
+			color: white
+			border-radius: 5px
+			padding-left: 0.5rem
+			font-size: r(14px)
+			&::placeholder
+				font-size: r(14px)
+				font-style: italic
+		.searchbutton
+			height: 100%
+			width: r(30px)
+			background: transparent
+			position: absolute
+			border: 0
+			right: 0
+			top: 0
+			color: white
+		@media (max-width: 576px)
+			width: 100%
+	.hotline
+		display: flex
+		margin-left: r(14px)
+		align-items: center
+		height: 30px
+		em
+			color: #f79524
+			font-size: r(24px)
+			margin-right: r(6px)
+		a
+			color: #f79524
+			font-size: r(18px)
+			font-weight: 600
+		@media (max-width: 992px)
+			margin-left: 0
+			margin-top: 1.5rem
+	.tool-box
+		margin-left: r(17px)
+		display: flex
+		align-items: center
+		.facebook
+			a
+				display: flex
+				width: 40px
+				height: 40px
+				justify-content: center
+				align-items: center
+				border: 1px solid white
+				border-radius: 50%
+				color: white
+				font-size: 1rem
+			@media (max-width: 992px)
+				a
+					width: 25px
+					height: 25px
+					font-size: r(10px)
+		.cart
+			margin-left: r(11px)
+			.cart-toggle
+				.icon
+					display: flex
+					width: 40px
+					height: 40px
+					justify-content: center
+					align-items: center
+					border: 1px solid white
+					border-radius: 50%
+					cursor: pointer
+					span
+						color: white
+						font-size: 1rem
+			@media (max-width: 992px)
+				.cart-toggle
+					.icon
+						width: 25px
+						height: 25px
+						span
+							font-size: r(10px)
+		.login
+			margin-left: r(11px)
+			display: flex
+			align-items: center
+			span
+				color: white
+				margin-right: 0.5rem
+				text-align: center
+			.logout,.login-inner
+				display: flex
+				width: 40px
+				height: 40px
+				justify-content: center
+				align-items: center
+				border: 1px solid white
+				border-radius: 50%
+				color: white
+			.logout
+				border-radius: 0
+				border: 0
+			.welcome-message
+				color: #fff
+				font-size: 13px
+				height: 100% !important
+				width: 100% !important
+				text-align: center
+				@media (max-width: 480px)
+					font-size: r(11px)
+			.login-inner,a.logout
+				font-size: 0
+				i
+					font-size: 1rem
+			@media (max-width: 992px)
+				a
+					width: 25px !important
+					height: 25px !important
+					font-size: r(10px)
+					margin-right: 0.5rem
+					i
+						font-size: r(11px)
+			@media (max-width: 768px)
+				flex-direction: row
+				span
+					font-size: r(13px)
+					margin-right: 0
+	.menu
+		margin-top: 0.8rem
+		ul
+			list-style: none
+			li
+				display: inline-block
+				&:not(:first-child)
+					margin-left: r(26px)
+				a
+					color: white
+					font-size: r(16px)
+				&:hover,&.active
+					> a
+						color: #f79524
+		@media (max-width: 1600px)
+			ul
+				li
+					&:not(:first-child)
+						margin-left: r(16px)
+					a
+						font-size: r(14px)
+		@media (max-width: 1200px)
+			ul
+				li
+					&:not(:first-child)
+						margin-left: r(8px)
+		@media (max-width: 992px)
+			position: fixed
+			left: 0
+			margin: 0
+			background: #231f20
+			width: 300px
+			height: 100%
+			overflow-y: auto
+			padding: 2rem 0 8rem 2.5rem
+			transform: translateX(-100%)
+			transition: 0.3s all linear
+			z-index: 300
+			ul
+				display: flex
+				flex-direction: column
+				li
+					&:not(:first-child)
+						margin-left: 0
+						margin-top: 1rem
+			&.active
+				transform: translateX(0)
+	.menu-toggle
+		display: none
+		width: 2rem
+		height: 2rem
+		background: #f79524
+		justify-content: center
+		align-items: center
+		span
+			color: #231f20
+			font-size: 1.2rem
+		@media (max-width: 992px)
+			display: flex
+	.overlay
+		@media (max-width: 992px)
+			position: absolute
+			left: 0
+			top: 110px
+			width: 100%
+			height: calc(100vh - 110px)
+			background: rgba(0,0,0,0.3)
+			z-index: -1
+			display: none
+			&.active
+				display: block
+	.dropdown
+		position: relative
+		.dropdown-menu
+			position: absolute
+			width: r(230px)
+			flex-direction: column
+			background: #231f20
+			padding: r(12px)
+			top: 43px
+			display: none
+			li:not(:first-child)
+				margin-left: 0
+			&:before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 19px
+				top: -19px
+				left: 0
+		&:hover
+			.dropdown-menu
+				display: flex
+		@media (max-width: 992px)
+			position: initial
+			.dropdown-menu
+				position: relative
+				display: flex
+				padding: 0 r(12px) 0 r(16px)
+				top: auto
+				margin-top: 0.5rem
+				li:not(:first-child)
+					margin-top: 0.5rem !important
+				&:before
+					width: 1px
+					height: 100%
+					top: 0
+					left: 3px
+					background: #fff

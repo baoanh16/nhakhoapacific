@@ -1,0 +1,55 @@
+.solution-list
+	padding: r(30px) 0
+	+media-breakpoint-up(lg)
+		padding: r(60px) 0
+	img
+		width: 100%
+	.solution-navigation
+		h3
+			line-height: 45px
+			vertical-align: bottom
+			display: flex
+			align-items: flex-end
+			font-size: r(24px)
+			margin-bottom: r(24px)
+			color: #2b3ba2
+			+media-breakpoint-down(md)
+				position: relative
+				&:after
+					+fontawesome('\f0c9', $faf)
+					position: absolute
+					right: 0
+					top: 1rem
+					color: #2b3ba2
+					font-size: 1.25rem
+		ul
+			display: none
+			list-style: none
+			+media-breakpoint-up(lg)
+				display: block!important
+			li
+				margin-bottom: 1rem
+				position: relative
+				a
+					font-size: r(13px)
+					display: block
+					color: lighten(black, 20%)
+					font-weight: 500
+					+media-breakpoint-up(lg)
+						font-size: r(14px)
+					+media-breakpoint-up(xl)
+						font-size: r(15px)
+				&:after
+					+linearicons('\e876')
+					position: absolute
+					right: 0
+					top: 4px
+				&.active,&:hover
+					a
+						color: #2b3ba2
+						text-shadow: 0px 0px #2b3ba2
+	.solution-content
+		h5
+			font-size: r(36px)
+			color: #2b3ba2
+			margin-bottom: r(24px)

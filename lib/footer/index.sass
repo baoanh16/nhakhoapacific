@@ -1,0 +1,203 @@
+.pacific-footer-1
+    .pacific-footer-top
+        padding: r(36px) 0
+        @media (max-width: 992px)
+            padding: r(20px) 0
+        .newsletter-wrapper
+            display: flex
+            align-items: center
+            @media (max-width: 992px)
+                flex-wrap: wrap
+            .text
+                display: flex
+                align-items: center
+                h2
+                    color: #dedede
+                    font-size: 1.3rem
+                    font-weight: 600
+                p
+                    color: #dedede
+                    font-size: r(14px)
+                    max-width: r(397.5px)
+                    margin-left: r(23px)
+                @media (max-width: 992px)
+                    flex: 0 0 100%
+                    max-width: 100%
+                    width: 100%
+                    flex-direction: column
+                    p
+                        text-align: center
+                        margin-left: 0
+            .subscribefrm
+                display: flex
+                input
+                    background: rgba(255,255,255,0.2)
+                    border: 0
+                    color: white
+                    font-size: r(14px)
+                    padding-left: 0.5rem
+                    width: r(430px)
+                    height: 40px
+                    border-radius: 5px
+                    &::placeholder
+                        font-size: r(14px)
+                        color: white
+                    @media (max-width: 1600px)
+                        width: 20.875rem
+                button
+                    background: #f79523
+                    color: white
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border: 0
+                    border-radius: 5px
+                    width: r(130px)
+                    margin-left: r(12px)
+                @media (max-width: 992px)
+                    width: 100%
+                    justify-content: center
+                    margin-top: 0.8rem
+    .pacific-footer-bottom
+        padding: r(49px) 0 0
+        h2
+            font-size: r(18px)
+            font-weight: 600
+            color: #2b3ba2
+            margin-bottom: r(17px)
+        ul
+            list-style: none
+            li,a
+                font-size: r(14px)
+                color: #333333
+        .info
+            &:first-child
+                margin-bottom: r(22px)
+        .nav
+            .nav-item
+                &:not(:first-child)
+                    margin-top: r(10px)
+                &:before
+                    +fontawesome('\f105',$faf)
+                    margin-right: 0.5rem
+                    color: #666666
+                    font-size: r(12px)
+        .social-link
+            display: flex
+            align-items: center
+            .nav-item
+                &:not(:first-child)
+                    margin-top: 0
+                    margin-left: 8px
+                &:before
+                    display: none
+                a
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: 50%
+                    color: #ffffff
+                    width: 40px
+                    height: 40px
+                    font-size: r(18px)
+                    &.fa-facebook-f
+                        background: #3b5998
+                    &.fa-google-plus-g
+                        background: #ce524f
+                    &.fa-youtube
+                        background: #ff0018
+        .info-wrapper
+            flex: 0 0 20%
+            max-width: 20%
+            padding: 0 20px 0 15px
+            &:last-child
+                flex: 0 0 20%
+                max-width: 20%
+                padding: 0 15px 0 20px
+        .link-product
+            flex: 0 0 20%
+            max-width: 20%
+            padding: 0 20px
+        .link-support
+            flex: 0 0 20%
+            max-width: 20%
+            padding: 0 20px
+        .link-others
+            flex: 0 0 20%
+            max-width: 20%
+            padding: 0 20px
+        @media (max-width: 1200px)
+            .info-wrapper,.link-product,.link-support,.link-others,.info-wrapper:last-child
+                flex: 0 0 33.333333%
+                max-width: 33.333333%
+            .link-others,.info-wrapper:last-child
+                margin-top: 2.5rem
+        @media (max-width: 768px)
+            .info-wrapper,.link-product,.link-support,.link-others
+                flex: 0 0 50%
+                max-width: 50%
+            .link-support
+                margin-top: 2.5rem
+            .info-wrapper:last-child
+                flex: 0 0 100%
+                min-width: 100%
+                display: flex
+                .info
+                    flex: 0 0 50%
+                    max-width: 50%
+                    &:last-child
+                        padding: 0 20px
+        @media (max-width: 450px)
+            .info-wrapper,.link-product,.link-support,.link-others
+                flex: 0 0 100%
+                max-width: 100%
+            .link-product
+                margin-top: 2.5rem
+            .info-wrapper:last-child
+                flex-wrap: wrap
+                .info
+                    flex: 0 0 100%
+                    min-width: 100%
+                    &:last-child
+                        padding: 0
+    .policy-copyright
+        display: flex
+        justify-content: space-between
+        margin-top: 3rem
+        padding: r(17px) 0
+        border-top: 1px solid #eeeeee
+        .copyright
+            p
+                font-size: r(13px)
+                color: #666666
+        .policy
+            ul
+                li
+                    display: inline-block
+                    a
+                        color: #666666
+                        font-size: r(13px)
+                    &:not(:first-child)
+                        margin-left: r(38px)
+                        position: relative
+                        &:before
+                            position: absolute
+                            content: '|'
+                            left: -21px
+                            top: 9%
+                            color: #666666
+        @media (max-width: 768px)
+            flex-direction: column
+            align-items: center
+        @media (max-width: 331px)
+            .copyright
+                p
+                    text-align: center
+            .policy
+                ul
+                    li
+                        display: block
+                        &:not(:first-child)
+                            margin-left: 0
+                            &:before
+                                display: none

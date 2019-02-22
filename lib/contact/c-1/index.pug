@@ -1,0 +1,51 @@
+section.canhcam-form-contact-1
+	.container
+		.row
+			.col
+				.title
+					h2.head-title đăng ký tư vấn
+					p Quý khách vui lòng điền thông tin vào mẫu bên dưới và gửi những góp ý, thắc mắc cho Bảo Tàng Lịch Sử, chúng tôi sẽ phản hồi email của 
+						br
+						| Quý khách trong thời gian sớm nhất.
+		.row
+			.col-10.mx-auto
+				.row
+					.col-lg-4
+						.info(bg-img='./img/global/form_contact_bg.png')
+							figure
+								img.img-fluid(src='./img/global/logo.png', alt='')
+								figcaption
+									p Địa chỉ: 
+										span Địa chỉ: Số 8-10, Bàu Cát, Phường 14, Quận Tân Bình, Tp Hồ Chí Minh
+									p Điện thoại: 
+										span 028 3860 8969
+									p Fax: 
+										span 0283860 8339
+									p Email: 
+										span lienviet@vicco.vn
+
+
+					.col-lg-8
+						.wrap-form
+							#ctl00_mdl234_ctl00_pnlQuestions
+								.form-group.qtext
+									input( type="text" placeholder="Họ và tên")
+								.form-group.qtext
+									input( type="text" placeholder="Email")
+								.form-group.qtext
+									input( type="text" placeholder="Số điện thoại")
+								.form-group.qtext
+									input( type="text" placeholder="Tiêu đề")
+								.form-group.qparagraph 
+									textarea(name="Nội dung",placeholder="Nội dung",  rows="8")
+								.form-group.frm-captcha
+									.frm-captcha-input
+										input( type="text" placeholder="")
+									#ctl00_mainContent_ctl04_captcha_SpamProtectorPanel
+										#ctl00_mainContent_ctl04_captcha_ctl01
+											img(src='./img/04_service_detail/service_detail_2.png', alt='')
+											a(href="#")
+
+								.form-group.frm-btnwrap
+									.frm-btn
+										a(href="#").btn.frm-btn-submit Gửi

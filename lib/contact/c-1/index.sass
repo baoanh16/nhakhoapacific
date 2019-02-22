@@ -1,0 +1,266 @@
+.canhcam-form-contact-1
+	padding-top: r(80px)
+	padding-bottom: 3rem
+	+media-breakpoint-down(sm)
+		padding-top: r(40px)
+	.title
+		margin-bottom: 3rem
+		.head-title
+			color: #2b3ba2
+			text-align: center
+			font-size: r(36px)
+			margin-bottom: r(31px)
+			text-transform: uppercase
+		p
+			text-align: center
+			font-size: 18px
+			color: #999999
+			+media-breakpoint-down(md)
+				br
+					display: none
+			+media-breakpoint-down(sm)
+				padding: 1rem 0
+				font-size: 15px
+	.info
+		padding: 3.5rem
+		height: 100%
+		+media-breakpoint-down(md)
+			padding: 2rem
+			margin-bottom: 2rem
+			height: auto
+		+media-breakpoint-down(sm)
+			padding: 2rem 1.5rem 1.5rem 1.5rem
+		figure
+			flex-direction: column
+			+flex-center()
+			img
+				margin-bottom: 1.5rem
+			figcaption
+				width: 100%
+				h4
+					font-size: r(25px)
+					font-weight: 700
+					color: #2b3ba2
+					padding-bottom: r(30px)
+					text-align: left
+				p
+					line-height: r(26px)
+					text-align: left
+					font-weight: 700
+					color: #333333
+					font-size: r(15px)
+
+					span
+						color: #999999
+						font-weight: normal
+	.wrap-form
+		position: relative
+		div[id]
+			display: flex
+			flex-wrap: wrap
+			margin: 0 -15px
+			.form-group
+				flex: 0 0 50%
+				max-width: 50%
+				margin: 0
+				margin-bottom: r(20px)
+				padding: 0 15px
+				&:last-child
+					max-width: 100%
+					flex: 0 0 100%
+				+media-breakpoint-down(xs)
+					.form-group:nth-child(even)
+						padding-left: .5rem
+					.form-group:nth-child(odd)
+						padding-right: .5rem
+				input, textarea
+					border: 1px solid rgb(235, 235, 235)
+					caret-color: darken(#2b3ba2, 20%)
+					padding: 0 1rem
+					color: #333333
+					font-size: 15px
+					width: 100%
+					transition: .3s all ease-in-out
+					height: 40px
+					&:focus
+						border: 1px solid darken(#2b3ba2, 20%)
+						box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
+						outline: none
+				::-webkit-input-placeholder
+					color: #999999
+					font-style: italic
+				textarea
+					height: r(180px)
+					padding-top: 1rem
+				.qtext
+					flex: 0 0 50%
+					+media-breakpoint-down(sm)
+						flex: 0 0 100%
+					+flex-center()
+					&:nth-child(odd)
+						+media-breakpoint-up(md)
+							padding-right: r(15px)
+					&:nth-child(even)
+						+media-breakpoint-up(md)
+							padding-left: r(15px)
+							
+				.qparagraph
+					flex: 0 0 100%
+					+flex-center()
+				
+
+	.RadCaptcha
+		position: relative
+		flex-wrap: nowrap !important
+		width: auto !important
+		left: 5%
+		#ctl00_mainContent_ctl04_captcha_ctl00
+			// display: none
+			position: absolute
+			bottom: -1.5rem
+			color: red
+
+			+media-breakpoint-down(md)
+				bottom: initial
+				top: -1.5rem
+
+	#ctl00_mainContent_ctl04_captcha_SpamProtectorPanel
+		display: inline-block
+
+	#ctl00_mainContent_ctl04_captcha_ctl01
+		+flex-center()
+		justify-content: space-evenly
+		flex-wrap: nowrap !important
+		width: 100%
+		img
+			width: 10rem
+		a
+			font-size: 0
+			text-decoration: none
+			&:after
+				content: "\e861"
+				font-family: "Linearicons-Free"
+				font-size: 2rem
+				display: block
+				margin: 0 1rem
+			&:hover
+				&:after
+					text-decoration: none
+
+
+	.frm-btnwrap
+		display: inline-flex
+		margin: 3px 0 0 2rem
+		position: absolute
+		right: 0
+		bottom: 0
+		+media-breakpoint-down(xl)
+			margin-left: 1rem
+		+media-breakpoint-down(sm)
+			width: 100%
+			margin: 0
+			position: initial
+			margin-top: 1rem
+		.label
+			display: none
+		input
+			border-radius: 5px
+			height: 40px
+			border: 0
+	.frm-captcha
+		display: flex
+		margin-bottom: 0
+		flex-wrap: nowrap !important
+		+flex-center()
+		justify-content: space-between
+		width: 75%
+		padding: 0 15px
+		+media-breakpoint-down(xl)
+			width: 80%
+		+media-breakpoint-down(lg)
+			width: 76%
+		+media-breakpoint-down(md)
+			width: 75%
+		+media-breakpoint-down(sm)
+			width: 100%
+		@media (max-width: 500px)
+			flex-direction: column-reverse
+			margin: 0 !important
+		.frm-captcha-input
+			height: 100%
+			+flex-center()
+			width: 70%
+			+media-breakpoint-down(lg)
+				width: 53%
+			@media (max-width: 500px)
+				width: 100%
+				margin-top: 1rem
+			.label
+				display: none
+			input
+				border: 1px solid rgb(235, 235, 235)
+				transition: .3s all ease-in-out
+				height: r(50px)
+				width: 100%
+				color: #666666
+				padding: 0 1rem
+				&:focus
+					border: 1px solid darken(#2b3ba2, 20%)
+					box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
+					outline: none
+			::-webkit-input-placeholder
+				color: #999999
+				font-style: italic
+
+
+	.frm-btn
+		width: 100%
+		overflow: hidden
+		position: relative
+		.frm-btn-submit
+			background: darken(#2b3ba2, 20%)
+			color: #ffffff
+			width: r(150px)
+			transition: .3s all ease-in-out
+			height: r(47px)
+			+flex-center()
+			@media (min-width: 1500px)
+				width: 8.2rem
+			+media-breakpoint-down(xl)
+				width: 6.375rem
+			+media-breakpoint-down(lg)
+				width: 8rem
+			+media-breakpoint-down(md)
+				width: r(150px)
+			+media-breakpoint-down(sm)
+				font-size: 1rem
+				width: 100%
+		&:after
+			position: absolute
+			right: 2rem
+			top: 50%
+			transform: translateY(-50%)
+			display: block
+			content: "\f054"
+			color: #ffffff
+			font-family: "Material Design Icons"
+			transition: .3s all ease-in-out
+			+media-breakpoint-down(md)
+				content: ""
+		+media-breakpoint-up(md)
+			&:hover
+				.frm-btn-submit
+					color: darken(#2b3ba2, 20%)
+					background: #ffffff
+					border: 1px solid darken(#2b3ba2, 20%)
+				&:after
+					right: -10rem
+		.frm-btn-reset
+			display: none
+	.ModuleContent
+		height: 100%
+	> div[id]
+		height: 100%
+	.rcRefreshImage
+		color: #9d9080
+

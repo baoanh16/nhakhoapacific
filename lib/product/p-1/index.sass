@@ -1,0 +1,206 @@
+.pacific-product-1
+	padding: r(60px) 0
+	overflow: hidden
+	.offset-xl-1
+		@media (min-width: 1200px)
+			margin-left: 8.333333%
+	@media (max-width: 992px)
+		padding: r(32px) 0
+	h1
+		font-size: r(40px)
+		color: #2b3ba2
+		text-align: center
+		margin-bottom: r(50px)
+		@media (max-width: 992px)
+			margin-bottom: 1.5rem
+	.side-menu-wrapper
+		h2
+			font-size: r(18px)
+			color: #2b3ba2
+			text-transform: uppercase
+			margin-bottom: r(17px)
+		.side-menu
+			list-style: none
+			.hassub
+				position: relative
+				&.active
+					> a
+						font-weight: 700
+						color: #2b3ba2
+				a
+					font-size: r(15px)
+					color: #333333
+					display: block
+					padding: r(10px) 0 r(15px)
+					border-bottom: 0.5px solid #e1e1e1
+					border-top: 0.5px solid #e1e1e1
+				&:first-child
+					a
+						border-top: 1px solid #e1e1e1
+				.menu-toggle
+					position: absolute
+					right: 0
+					top: 13px
+					cursor: pointer
+					z-index: 2
+					&.active
+						i
+							display: block
+							transform: rotate(180deg)
+				.submenu
+					list-style: none
+					padding: r(15px) 0 0 r(20px)
+					display: none
+					li
+						margin-bottom: r(15px)
+						a
+							border: 0
+							padding: 0
+						&.active
+							a
+								font-weight: 700
+								color: #2b3ba2
+	.product-wrapper
+		@media (max-width: 992px)
+			margin-top: 2.5rem
+	.product-header
+		padding-top: r(8px)
+		border-top: 2px solid #e1e1e1
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: r(40px)
+		@media (max-width: 992px)
+			padding-top: 1rem
+	.sort-wrapper
+		width: r(196px)
+		height: r(40px)
+		select
+			width: 100%
+			height: 100%
+			border: 1px solid #e1e1e1
+			font-size: r(15px)
+			color: #333333
+		@media (max-width: 768px)
+			width: 100%
+	.right-wrapper
+		display: flex
+		align-items: center
+		@media (max-width: 768px)
+			margin-top: 1rem
+			justify-content: space-between
+			width: 100%
+		@media (max-width: 480px)
+			flex-direction: column-reverse
+	.display-list
+		list-style: none
+		display: flex
+		li
+			padding: 0 r(12px)
+			position: relative
+			&:not(:last-child)
+				&:after
+					position: absolute
+					content: ''
+					right: 0
+					top: 50%
+					transform: translateY(-50%)
+					height: 15px
+					width: 1px
+					background: #333333
+			a
+				font-size: r(15px)
+				color: #333333
+			&.active
+				a
+					color: #2b3ba2
+					font-weight: 700
+		@media (max-width: 400px)
+			margin-top: 1rem
+	.form-search
+		position: relative
+		&:after
+			position: absolute
+			+fontawesome('\f002',$faf)
+			top: 50%
+			transform: translateY(-50%)
+			right: 7px
+			color: #929292
+		input
+			height: r(30px)
+			width: r(280px)
+			background: #f2f2f2
+			border-radius: 5px
+			border: 0
+			font-size: r(14px)
+			padding-left: r(19px)
+			padding-right: r(30px)
+			color: #b0b0b0
+			font-style: italic
+	.product-list
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -1rem
+	.product-col
+		flex: 0 0 25%
+		max-width: 25%
+		padding: 0 1rem
+		@media (max-width: 1200px)
+			flex: 0 0 33.333333%
+			max-width: 33.333333%
+		@media (max-width: 768px)
+			flex: 0 0 50%
+			max-width: 50%
+		@media (max-width: 380px)
+			flex: 0 0 100%
+			max-width: 100%
+	.product-item
+		margin-bottom: 2rem
+		border-radius: 8px
+		overflow: hidden
+		padding: 0 10px
+		transition: 0.3s all
+		.product-img
+			height: r(200px)
+			display: flex
+			align-items: center
+			justify-content: center
+			a
+				display: block
+				height: 100%
+			img
+				max-width: 100%
+				height: 100%
+				object-fit: contain
+		.title
+			font-size: r(15px)
+			color: #333333
+			font-weight: normal
+			margin-bottom: 0.5rem
+			height: 45px
+			+line(2)
+		.price
+			font-size: r(18px)
+			font-weight: 700
+			color: #2b3ba2
+			display: block
+		.title,.price
+			@media (min-width: 1600px)
+				padding: 0 20px
+		.btn-addcart
+			display: flex
+			justify-content: center
+			align-items: center
+			background: #2b3ba2
+			color: #ffffff
+			padding: r(8px) 0
+			margin: r(30px) -10px 0
+			transition: 0.3s all
+			.shopping-cart
+				margin-right: 0.5rem
+		&:hover
+			box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15)
+			transition: 0.3s all
+			.btn-addcart
+				background: #f79523
+				transition: 0.3s all

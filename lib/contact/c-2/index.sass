@@ -1,0 +1,32 @@
+
+.canhcam-contact-2
+	padding: 0 0 r(80px) 0
+	+media-breakpoint-down(sm)
+		padding: 0 0 r(40px) 0
+		// padding: 3rem 0
+	article
+		border-bottom: 1px solid darken(#ffffff,10%)
+		margin-bottom: 1rem
+		&:last-child
+			border-bottom: 0
+			margin-bottom: 0
+		h3
+			color: darken(#ffffff,80%)
+		.address, .tel, .hotline
+			margin-bottom: 0
+			color: darken(#ffffff,50%)
+		.hotline
+			margin-bottom: 1rem
+			span
+				color: #2b3ba2
+				font-size: 1.2rem
+		.collapse
+			margin-bottom: 1rem
+			iframe
+				width: 100%
+				min-height: 420px
+				+media-breakpoint-down(md)
+					min-height: 320px
+				+media-breakpoint-down(sm)
+					min-height: 220px
+

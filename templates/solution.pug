@@ -1,0 +1,13 @@
+extends _layout/_layout.pug
+
+block var
+	- title = 'Home'
+	- bodyClass = 'index-page'
+
+block header
+	include ../lib/header/index.pug
+block main
+	include ../lib/banner/b-page/index.pug
+	include ../lib/hotro/index.pug
+block footer
+	include ../lib/footer/index.pug

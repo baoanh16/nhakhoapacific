@@ -1,0 +1,64 @@
+.pacific-home-3
+	background-image: url('.././img/home/bg-2.jpg')
+	background-position: center center
+	background-size: cover
+	h2
+		color: #fff
+		text-align: left
+		font-size: r(36px)
+		margin-bottom: r(31px)
+	.part-news
+		height: 564px
+		@media (max-width: 992px)
+			height: auto
+			figure
+				margin-top: 0
+				margin-bottom: 2rem
+	.video-list
+		height: 564px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		@media (max-width: 576px)
+			height: auto
+		.row
+			.col-12,.col-sm-4
+				height: 100%
+			&:first-child
+				flex: 0 0 calc(70% - 13px)
+				max-height: calc(70% - 13px)
+			&:last-child
+				flex: 0 0 calc(30% - 13px)
+				max-height: calc(30% - 13px)
+	.col-sm-4
+		.video-item
+			&:before
+				transform: translate(-50%,-50%) scale(0.6)
+			@media (max-width: 576px)
+				&:before
+					transform: translate(-50%,-50%)
+	.video-item
+		display: flex
+		position: relative
+		height: 100%
+		@media (max-width: 576px)
+			margin-bottom: 1.5rem
+		@media (max-width: 480px)
+			height: 240px
+		&:before
+			content: url('.././img/play-button.png')
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			z-index: 2
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: #000
+			opacity: 0.3
+			z-index: 1

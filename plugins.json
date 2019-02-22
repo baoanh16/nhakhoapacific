@@ -1,0 +1,20 @@
+{
+	"scripts": [
+		"bower_components/jquery/dist/jquery.min.js",
+		"bower_components/swiper/dist/js/swiper.min.js",
+		"_plugins/bgimg.js",
+		"_plugins/mapping-listener.js",
+		"_plugins/mapping.js",
+		"bower_components/izimodal/js/iziModal.min.js",
+		"_plugins/jquery.inputarrow.js",
+		"bower_components/tabby/dist/js/tabby.min.js",
+		"bower_components/fancybox/dist/jquery.fancybox.min.js"
+	],
+	"styles": [
+		"_plugins/grid.css",
+		"bower_components/swiper/dist/css/swiper.min.css",
+		"bower_components/izimodal/css/iziModal.min.css",
+		"bower_components/tabby/dist/css/tabby.min.css",
+		"bower_components/fancybox/dist/jquery.fancybox.min.css"
+	]
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Krub:300,400,500,600,700&subset=vietnamese')
+
+html,body
+	font-weight: normal
+	line-height: 1.5
+	font-size: 16px
+	font-family: 'Krub', sans-serif
+*
+	outline: none
+ul,p,h1,h2,h3,h4,h5,h6,figure,label
+	margin: 0
+	padding: 0
+a
+	&:hover
+		text-decoration: none
+img
+	max-width: 100%
+	height: auto
+.container
+	@media (min-width: 1440px)
+		max-width: 1410px
+		margin: 0 auto
+body
+	@media (max-width: 992px)
+		&.hidden
+			overflow-y: hidden
+main
+	margin-top: -15px
+	overflow: hidden
+.Module-213,.Module-212
+	width: 100%
+.homepage
+	.pacific-warranty-1
+		h2
+			font-size: r(40px)
+			font-weight: 700
+			text-align: center
+			color: #2b3ba2
+			margin-bottom: r(30px)
+.Module-272
+	.swiper-prev, .swiper-next
+		@media (min-width: 992px)
+			top: 25% !important
+.pagination
+	list-style: none
+	text-align: center
+	display: flex
+	justify-content: center
+	li
+		margin-right: r(9px)
+		a,span
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 30px
+			height: 30px
+			background: #ebebeb
+			color: #333333
+		&.active
+			a,span
+				background: #2d3a8d
+				color: #ffffff

@@ -1,0 +1,132 @@
+.pacific-course-2
+	position: absolute
+	top: 180px
+	right: 50px
+	@media (max-width: 768px)
+		position: initial
+		margin-bottom: 2rem
+		margin-top: -1rem
+	h2
+		font-size: r(40px)
+		color: #2b3ba2
+		text-align: center
+		margin-bottom: r(50px)
+	.frm-btnwrap
+		flex: 0 0 100%
+		max-width: 100%
+		margin-top: 0.8rem
+		label
+			display: none
+		.frm-btn
+			height: r(45px)
+			width: 100%
+			.frm-btn-reset
+				display: none
+			input.frm-btn-submit
+				width: 100%
+				height: 100%
+				padding-left: 0
+				background: #f79523
+				text-transform: uppercase
+				color: white
+				font-size: r(18px)
+				font-weight: 600
+				cursor: pointer
+				border: 0
+				border-radius: 5px
+	.wrap-form
+		height: r(360px)
+		width: r(450px)
+		margin: auto
+		background-color: rgba(#2d3a8d,0.5)
+		border-radius: 8px
+		padding: r(30px)
+		div[id]
+			display: flex
+			flex-wrap: wrap
+			margin: 0 -10px
+			.form-group
+				flex: 0 0 100%
+				max-width: 100%
+				padding: 0 10px
+				margin-bottom: r(10px)
+				height: r(40px)
+				position: relative
+				&:before
+					position: absolute
+					right: r(20px)
+					top: 50%
+					transform: translateY(-50%)
+					color: #ffffff
+				input,select
+					width: 100%
+					height: 100%
+					border-radius: 5px
+					border: 1px #e1e1e1 solid
+					padding-left: r(10px)
+					font-size: r(15px)
+					color: #fff
+					background: rgba(#fff,0.1)
+					&::placeholder
+						font-size: r(15px)
+						color: #fff
+				select
+					appearance: none
+					option
+						color: #000
+				input[type="checkbox"]
+					width: 15px
+					height: 15px
+				&:first-child
+					&:before
+						+fontawesome("\f007",$faf)
+				&:nth-child(2)
+					&:before
+						+fontawesome("\f095",$faf)
+				&:nth-child(3)
+					&:before
+						+fontawesome("\f0e0",$faf)
+				&:nth-child(4)
+					&:before
+						+fontawesome("\f518",$faf)
+				&:nth-child(5)
+					flex: 0 0 100%
+					max-width: 100%
+					display: flex
+					input
+						margin-right: 0.5rem
+						border: 1px solid #2d3a8d
+						margin-top: 0.3rem
+						display: none
+						&:checked
+							~ label:before
+								+fontawesome('\f14a',$faf)
+								color: #fff
+					label
+						font-size: r(15px)
+						color: #ffffff
+						display: flex
+						&:before
+							margin-top: 0.3rem
+							margin-right: 0.5rem
+							+fontawesome('\f0c8',$faf)
+							display: block
+
+		@media (max-width: 768px)
+			width: 100%
+			background-color: rgba(#2d3a8d,1)
+		@media (max-width: 500px)
+			height: auto
+			div[id]
+				.form-group
+					flex: 0 0 100%
+					max-width: 100%
+					&:nth-child(5)
+						input
+							width: 20px
+							height: 20px
+						label
+							font-size: r(14px)
+				.frm-btnwrap
+					.frm-btn
+						width: 100%

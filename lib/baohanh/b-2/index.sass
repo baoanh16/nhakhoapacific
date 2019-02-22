@@ -1,0 +1,215 @@
+.pacific-warranty-2
+    padding: r(73px) 0 r(88px)
+    h2
+        font-size: r(20px)
+        margin-bottom: r(39px)
+        text-transform: uppercase
+    .card-img
+        width: r(681.12px)
+        height: r(426.28px)
+        margin: auto
+        img
+            height: 100%
+            width: 100%
+            object-fit: cover
+        @media (max-width: 992px)
+            width: 100%
+            height: auto
+            text-align: center
+            img
+                height: auto
+                width: auto
+                object-fit: initial
+    .check-form
+        position: relative
+        width: r(510px)
+        margin: auto
+        margin-top: r(28px)
+        input
+            width: 100%
+            height: r(50px)
+            border-radius: 10px
+            border: 1px solid #2b3ba2
+            padding-left: r(19px)
+            font-size: r(15px)
+            color: #999999
+            &:placeholder
+                color: #999999
+                font-size: r(15px)
+        .btn-check
+            position: absolute
+            width: r(50px)
+            height: r(50px)
+            background: #2b3ba2
+            color: white
+            font-size: r(15px)
+            border-radius: 10px
+            border-top-left-radius: 0
+            border-bottom-left-radius: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            overflow: hidden
+            right: 0px
+            top: 0
+            font-size: r(30px)
+            &:after
+                +material('\f349')
+            &:hover
+                background: #222f82
+        #cardNotFound
+            color: #D32F2F
+            margin-top: 0.75rem
+            display: block
+            font-weight: 600
+        @media (max-width: 768px)
+            width: 100%
+
+    
+.card-result
+    border-radius: 0
+    .card-title
+        text-align: center
+        height: r(50px)
+        padding: r(12px) 0 r(15px)
+        background: #e9ebf6
+        color: #2b3ba2
+        text-transform: uppercase
+        position: relative
+        h2
+            font-size: r(20px)
+        @media (max-width: 450px)
+            text-align: left
+            padding: r(15px)
+            h2
+                font-size: 1rem
+        .card-close
+            position: absolute
+            right: 0
+            top: 0
+            width: 50px
+            height: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #2b3ba2
+            cursor: pointer
+            span
+                color: white
+                font-size: 1.5rem
+                display: flex
+    .card-img
+        text-align: center
+        padding: 2.5rem
+        position: relative
+        span
+            position: absolute
+            font-size: r(20px)
+            font-weight: 700
+            color: #d33139
+            &#cardName
+                top: 60%
+                left: 18%
+            &#cardCode
+                top: 45%
+                left: 63%
+            &#cardClinic
+                top: 69%
+                left: 21%
+            &#cardLab
+                top: 58%
+                left: 68%
+            &#cardDateOfIssue
+                bottom: 13%
+                left: 22%
+            &#cardTopRight
+                right: 17.5%
+                bottom: 26%
+            &#cardTopLeft
+                bottom: 26%
+                right: 30%
+            &#cardBottomLeft
+                right: 30%
+                bottom: 19%
+            &#cardBottomRight
+                right: 17.5%
+                bottom: 19%
+        @media (max-width: 621px)
+            span
+                font-size: r(16px)
+                &#cardLab
+                    top: 59%
+                &#cardCode
+                    top: 46%
+        @media (max-width: 500px)
+            padding: r(20px)
+            span
+                font-size: r(12px)
+                transform: translateY(15%)
+                &#cardCode
+                    top: 43%
+                &#cardLab
+                    top: 56%
+    .card-199
+        span#cardName
+            top: 56%
+        span#cardCode
+            top: 43%
+        span#cardDateOfIssue
+            bottom: 13%
+            left: 29%
+        span#cardLab
+            top: 54%
+            left: 64%
+        span#cardClinic
+            left: 22%
+    .card-198
+        span#cardDateOfIssue
+            left: 28%
+        @media (max-width: 500px)
+            span#cardCode
+                top: 46% !important
+            span#cardLab
+                top: 59% !important
+    .card-200
+        span#cardCode
+            top: 41%
+            left: 58%
+        span#cardLab
+            top: 48.5%
+            left: 54%
+        span#cardDateOfIssue
+            bottom: 10.5%
+            left: 26%
+        span#cardTopRight
+            right: 21%
+            bottom: 24%
+        span#cardTopLeft
+            bottom: 24%
+            right: 33%
+        span#cardBottomRight
+            right: 21%
+            bottom: 16%
+        span#cardBottomLeft
+            bottom: 16%
+            right: 33%
+        @media (max-width: 621px)
+            span#cardDateOfIssue
+                bottom: 13% !important
+    // @media (min-width: 1600px)
+    //     max-width: r(930px) !important
+    //     width: r(930px) !important
+    //     height: r(650px) !important
+    //     .card-title
+    //         h2
+    //             font-size: r(24px)
+    //     .card-img
+    //         width: r(681.12px)
+    //         height: r(426.28px)
+    //         margin: auto
+    //         margin-top: r(62px)
+    //         padding: 0
+    //         img
+    //             height: 100%
+    //             width: 100%
+    //             object-fit: cover

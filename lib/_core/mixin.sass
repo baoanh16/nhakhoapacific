@@ -1,0 +1,92 @@
+// Colors
+@function color-get($bn-colors, $co)
+	$mapcolor: map-get($bn-colors, "#{$co}")
+	@if ($mapcolor)
+		@return $mapcolor
+	@else
+		@return white
+
+@function color-rgba($co: #fff, $o:1)
+	@if ($co)
+		@return rgba(red($co),green($co),blue($co),$o)
+	@else
+		@return white
+
+// Set color lighten or darken
+@function color-up($co, $amount:0)
+	$tmp: lighten($co, $amount)
+	@return $tmp
+@function color-down($co, $amount:0)
+	$tmp: darken($co, $amount)
+	@return $tmp
+
+@function r($size)
+	@return ($size/16px)*1rem
+
+=line($line)
+	display: -webkit-box
+	text-overflow: ellipsis
+	-webkit-line-clamp: $line
+	overflow: hidden
+	-webkit-box-orient: vertical
+
+=material($content)
+	display: inline-block
+	font-family: "Material Design Icons"
+	font-size: inherit
+	text-rendering: auto
+	font-style: normal
+	font-weight: normal
+	font-variant: normal
+	line-height: inherit
+	-webkit-font-smoothing: antialiased
+	content: $content
+
+=linearicons($content)
+	font-family: 'Linearicons-Free'
+	content: $content
+	speak: none
+	font-style: normal
+	font-weight: 400
+	font-variant: normal
+	text-transform: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+
+=flex-center()
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+
+=grad1
+	background-image: -moz-linear-gradient( 0deg, #237f50 0%, #2ab46e 100%)
+	background-image: -webkit-linear-gradient( 0deg, #237f50 0%, #2ab46e 100%)
+	background-image: -ms-linear-gradient( 0deg, #237f50 0%, #2ab46e 100%)
+	background-image: linear-gradient( 0deg, #237f50 0%, #2ab46e 100%)
+
+
+=grad2
+	background-image: -moz-linear-gradient( 0deg, #237f50 0%, #00984a 100%)
+	background-image: -webkit-linear-gradient( 0deg, #237f50 0%, #00984a 100%)
+	background-image: -ms-linear-gradient( 0deg, #237f50 0%, #00984a 100%)
+	background-image: linear-gradient( 0deg, #237f50 0%, #00984a 100%)
+
+
+
+$faf: 'Font Awesome 5 Free'
+$fab: 'Font Awesome 5 Brands'
+$fap: 'Font Awesome 5 Pro'
+=fontawesome($content,$font)
+	font-family: $font
+	content: $content
+	-webkit-font-smoothing: antialiased
+	display: inline-block
+	font-style: normal
+	font-variant: normal
+	text-rendering: auto
+	line-height: 1
+	font-weight: 900
+
+=tran($time)
+	transition: all $time ease-in-out
