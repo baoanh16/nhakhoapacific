@@ -252,24 +252,6 @@ $(document).ready(function () {
 		}
 	})
 
-	const card_slider = new Swiper('.card-list', {
-		slidesPerView: 3,
-		spaceBetween: 30,
-		navigation: {
-			nextEl: '.next-card',
-			prevEl: '.prev-card',
-		},
-		breakpoints: {
-			540: {
-				slidesPerView: 1.5,
-				centeredSlides: true
-			},
-			992: {
-				slidesPerView: 2,
-				spaceBetween: 20
-			}
-		}
-	})
 
 	const home_banner = new Swiper('.pacific-home-banner .swiper-container', {
 		slidesPerView: 1,

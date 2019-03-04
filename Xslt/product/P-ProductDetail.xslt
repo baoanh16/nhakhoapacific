@@ -175,7 +175,7 @@
 					</img>
 				</div>
 				<h3 class="title">
-					<xsl:value-of select="Title price"></xsl:value-of>
+					<xsl:value-of select="Title"></xsl:value-of>
 				</h3>
 				<!-- <span class="price">
 					<xsl:choose>
